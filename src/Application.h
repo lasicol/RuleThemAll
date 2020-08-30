@@ -1,7 +1,12 @@
 #pragma once
-class Application
-{
-public:
-	void Run();
-};
+
+namespace RTA {
+	
+	class Application
+	{
+	public:
+		void Run();
+	};
+
+}
 

@@ -1,21 +1,30 @@
 -- premake5.lua
 workspace "RuleThemAll"
-   configurations { "Debug", "Release" }
-   architecture "x86_64"
+	configurations { "Debug", "Release" }
+	architecture "x86_64"
 
 project "RuleThemAll"
-   kind "ConsoleApp"
-   language "C++"
-   cppdialect "C++17"
+	kind "ConsoleApp"
+	language "C++"
+	cppdialect "C++17"
 
-   targetdir "bin/%{cfg.buildcfg}"
+	targetdir "bin/%{cfg.buildcfg}"
 
-   files { "src/**.h", "src/**.cpp" }
+	files { 
+		"src/**.h", 
+		"src/**.cpp" 
+	}
 
-   filter "configurations:Debug"
-      defines { "DEBUG" }
-      symbols "On"
+	includedirs
+	{
+		"src",
+		"vendor/spdlog/include",
+	}
 
-   filter "configurations:Release"
-      defines { "NDEBUG" }
-      optimize "On"
+	filter "configurations:Debug"
+		defines { "DEBUG" }
+		symbols "On"
+
+	filter "configurations:Release"
+		defines { "NDEBUG" }
+		optimize "On"

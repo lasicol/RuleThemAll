@@ -1,11 +1,14 @@
 #include "Application.h"
+#include "Log.h"
 #include <iostream>
 
+namespace RTA {
 
-void Application::Run()
-{
-	std::cout << "Application started!" << std::endl;
-	while (1) {
+	void Application::Run()
+	{
+		RTA_CORE_INFO("Application started!");
+		while (1) {
 
+		}
 	}
 }
