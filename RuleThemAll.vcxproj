@@ -88,10 +88,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Windows\CursorWindows.h" />
+    <ClInclude Include="src\Cursor.h" />
+    <ClInclude Include="src\Core.h" />
     <ClInclude Include="src\Log.h" />
     <ClInclude Include="src\Application.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\CursorWindows.cpp" />
+    <ClCompile Include="src\Cursor.cpp" />
     <ClCompile Include="src\Log.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\EntryPoint.cpp" />

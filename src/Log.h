@@ -20,9 +20,9 @@ namespace RTA {
 }
 
 // Log macros
-#define RTA_CORE_TRACE(...)    ::RTA::Log::GetLogger()->trace(__VA_ARGS__)
-#define RTA_CORE_INFO(...)     ::RTA::Log::GetLogger()->info(__VA_ARGS__)
-#define RTA_CORE_WARN(...)     ::RTA::Log::GetLogger()->warn(__VA_ARGS__)
-#define RTA_CORE_ERROR(...)    ::RTA::Log::GetLogger()->error(__VA_ARGS__)
-#define RTA_CORE_CRITICAL(...) ::RTA::Log::GetLogger()->critical(__VA_ARGS__)
+#define RTA_TRACE(...)    ::RTA::Log::GetLogger()->trace(__VA_ARGS__)
+#define RTA_INFO(...)     ::RTA::Log::GetLogger()->info(__VA_ARGS__)
+#define RTA_WARN(...)     ::RTA::Log::GetLogger()->warn(__VA_ARGS__)
+#define RTA_ERROR(...)    ::RTA::Log::GetLogger()->error(__VA_ARGS__)
+#define RTA_CRITICAL(...) ::RTA::Log::GetLogger()->critical(__VA_ARGS__)
 
