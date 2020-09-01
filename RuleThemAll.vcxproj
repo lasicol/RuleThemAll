@@ -88,6 +88,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\CursorMonitor.h" />
     <ClInclude Include="src\Platform\Windows\CursorWindows.h" />
     <ClInclude Include="src\Cursor.h" />
     <ClInclude Include="src\Core.h" />
@@ -95,6 +96,7 @@
     <ClInclude Include="src\Application.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CursorMonitor.cpp" />
     <ClCompile Include="src\Platform\Windows\CursorWindows.cpp" />
     <ClCompile Include="src\Cursor.cpp" />
     <ClCompile Include="src\Log.cpp" />

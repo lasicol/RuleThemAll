@@ -6,11 +6,11 @@
 
 namespace RTA {
 
-	Scope<CursorApi> RTA::CursorApi::Create()
+	std::unique_ptr<CursorApi> RTA::CursorApi::Create()
 	{
 		#ifdef RTA_PLATFORM_WINDOWS
-			return CreateScope<CursorWindows>();
+			return std::make_unique<CursorWindows>();
 		#endif
-		return Scope<CursorApi>();
+		return std::unique_ptr<CursorApi>();
 	}
 }

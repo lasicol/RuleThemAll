@@ -17,7 +17,7 @@ namespace RTA {
 
 		virtual Position inline GetPosition() const = 0;
 
-		static Scope<CursorApi> Create();
+		static std::unique_ptr<CursorApi> Create();
 	};
 
 }
